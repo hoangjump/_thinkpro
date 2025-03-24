@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Quicksand", sans-serif !important;
+}
+
+:root {
+	--text-black: #1c1f23;
+	--text-white: #fff;
+	--text-gray: #6b7075;
+	--text-red: #fe3464;
+
+	--bg-red: #fe3464;
+	--bg-white: #fff;
+	--bg-gray: #f6f9fc;
+	--bg-blue: #00d4ff;
+	--bg-owt: #0a2540;
+}
+
+// Tùy chỉnh theo tiêu chuẩn của thằng antd
+@mixin xs {
+	@media (max-width: 576px) {
+		@content;
+	}
+}
+
+@mixin sm {
+	@media (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin xl {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin xxl {
+	@media (min-width: 1600px) {
+		@content;
+	}
+}

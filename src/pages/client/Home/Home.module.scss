@@ -1,0 +1,167 @@
+@use "../../../components/GlobalStyles/GlobalStyles.module.scss" as screen;
+
+.wrapper {
+}
+
+.banner {
+	height: 312px;
+	max-height: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+
+	@include screen.xs {
+		margin: 0 16px 32px 16px;
+	}
+
+	@include screen.sm {
+		margin: 0 16px 32px 16px;
+	}
+
+	@include screen.md {
+		margin-bottom: 32px;
+	}
+}
+
+.content {
+	height: 100%;
+	padding: 32px 24px;
+	color: var(--text-white);
+	background-color: #27bece;
+
+	h2 {
+		font-size: 27px;
+		font-weight: 600;
+	}
+
+	p {
+		padding-top: 8px;
+		font-size: 16px;
+		line-height: 1.6;
+	}
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.usp {
+	padding: 32px 24px;
+	background-color: var(--bg-white);
+	border-radius: 8px;
+
+	@include screen.xs {
+		padding: 32px 16px 0 16px;
+		margin: 0 16px;
+	}
+
+	@include screen.sm {
+		padding: 32px 16px 0 16px;
+		margin: 0 16px;
+	}
+
+	h2 {
+		font-weight: 600;
+
+		span {
+			font-size: 28px;
+			color: var(--text-black);
+
+			& + span {
+				font-size: 24px;
+				color: var(--text-gray);
+				margin-left: 12px;
+			}
+		}
+	}
+}
+
+.items {
+	margin-top: 24px;
+}
+
+.skeleton {
+	&__img {
+		width: 100% !important;
+		height: 240px !important;
+	}
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--bg-gray);
+	border-radius: 6px;
+	padding: 24px;
+	height: 160px;
+	max-height: 100%;
+
+	&__icon {
+		display: inline-flex;
+		font-size: 24px;
+	}
+
+	&__content {
+		font-size: 18px;
+		margin-top: 8px;
+		font-weight: 600;
+	}
+}
+
+.prev,
+.next {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--bg-white);
+
+	&:hover {
+		background-color: none !important;
+	}
+}
+
+.suggestion {
+	margin-top: 48px;
+
+	@include screen.xs {
+		margin: 32px 16px 0 16px;
+	}
+
+	@include screen.sm {
+		margin: 32px 16px 0 16px;
+	}
+
+	h2 {
+		font-size: 27px;
+		font-weight: 600;
+		margin-bottom: 16px;
+	}
+}
+
+.products {
+	margin-top: 16px;
+
+	div > div > div > div > div {
+		height: calc(100% - 16px);
+	}
+}
+
+.empty {
+	display: block;
+
+	h4 {
+		font-size: 18px;
+		font-weight: 600;
+		margin-top: 8px;
+		color: var(--text-black);
+	}
+
+	p {
+		font-size: 14px;
+		font-weight: 400;
+		margin-top: 8px;
+		margin-bottom: 32px;
+		color: var(--text-black);
+	}
+}
